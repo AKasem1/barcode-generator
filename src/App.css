@@ -1,38 +1,100 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 40px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .input-container {
+    margin-bottom: 30px;
   }
-}
+  
+  .input-container input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+  
+  .input-container input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  .pickColorTag {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #5c5c5c;
+  }
+  
+  .color-picker-container {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .color-picker-container .color-preview {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .color-picker-container .color-preview:hover {
+    border: 2px solid #333;
+  }
+  
+  .color-picker-container .color-picker {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    z-index: 2;
+  }
+  
+  .generate-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .generate-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .download-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745; /* Green color */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px; /* Add margin to separate from other elements */
+  }
+  
+  .download-button:hover {
+    background-color: #218838; /* Darker green color on hover */
+  }
+  .success {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745; /* Green color */
+    text-align: center;
+    margin-top: 20px; /* Add some space above the message */
+  }
